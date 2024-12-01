@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Dorian LE BLEIS</title>
+    <!-- Tailwind CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="./images/bzh.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background-color: #3b82f6; /* Bleu clair */
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-track {
+            background-color: #f7fafc; /* Gris clair */
+        }
+
+        .section-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #2563eb;
+    margin: 10px auto;
+}
+    </style>
+</head>
+<body class="font-sans bg-gray-50 text-gray-800">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-gray-900 text-white shadow-lg opacity-80">
+        <nav class="container mx-auto flex justify-center gap-6 py-4">
+            <a href="#accueil" class="hover:text-blue-400">Accueil</a>
+            <a href="#about" class="hover:text-blue-400">À propos</a>
+            <a href="#competences" class="hover:text-blue-400">Compétences</a>
+            <a href="#projects" class="hover:text-blue-400">Projets</a>
+            <a href="#contact" class="hover:text-blue-400">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Section Hero -->
+    <section id="accueil" class="relative h-screen bg-cover bg-center text-white text-center">
+        <video autoplay muted loop playsinline class="absolute top-0 left-0 w-full h-full object-cover">
+            <source src="background.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas les vidéos HTML5.
+        </video>
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div class="relative z-10 flex flex-col justify-center items-center h-full">
+            <h1 class="text-5xl font-bold mb-4">Dorian LE BLEIS</h1>
+            <p class="text-xl">Étudiant en informatique</p>
+            
+        </div>
+    </section>
+
+    <!-- Section About -->
+    <section id="about" class="py-20 bg-gray-100">
+        <div class="container mx-auto">
+            <h2 class="section-title text-3xl font-bold text-center mb-10">À propos de moi</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+                <!-- Profile -->
+                <div class="flex flex-col items-center">
+                    <img src="images/pro.jpg" alt="Photo de Dorian" class="w-64 h-64 rounded-full shadow-lg mb-4">
+                    <h3 class="text-lg font-semibold">Dorian LE BLEIS</h3>
+                    <p class="text-gray-600">19 ans | Rennes Ynov Campus</p>
+                </div>
+                <!-- Introduction -->
+                <div class="text-left">
+                    <h3 class="text-2xl font-semibold text-blue-600 mb-4">Présentation</h3>
+                    <p class="text-lg">Bonjour, je m'appelle Dorian LE BLEIS--MICHAUD-THOMIN.</p>
+                    <p class="text-lg"> Étudiant B2 en informatique à Rennes Ynov Campus, je suis passionné par la cybersécurité <br>et les nouvelles technologies.</p>
+                    <span class="relative flex h-3 w-3">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-3 w-3 bg-sky-300"></span>
+                      </span>
+                    <p class="text-lg text-blue-600 underline decoration-sky-500">À la recherche d'un stage et d'une alternance</p>
+                    <div class="mt-6 size-64 justify-evenly">
+                        <img src="images/cv_preview.jpg" alt="" class="size-100 shadow-lg shadow-s shadow-blue-600/30">
+                        <br>
+                        <span class="relative flex h-3 w-3">
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-3 w-3 bg-sky-300"></span>
+                          </span>
+                        <a href="images/cv_dorian.pdf" download class="bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600">Télécharger mon CV</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- Section Hobbies -->
+   <section id="hobbies" class="py-20 bg-gray-100">
+    <div class="container mx-auto px-32">
+        <br>
+        <br>
+        <h2 class="section-title text-3xl font-bold text-center mb-10">Mes Hobbies</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-lg hover:shadow-blue-600/30 hover:scale-105 transition-transform duration-300 text-center">
+                <i class="fas fa-motorcycle text-blue-600 text-5xl mb-4"></i>
+                <h3 class="text-xl font-semibold text-blue-600 mb-2">La Moto</h3>
+                <p>Passionné par la moto, je me suis récemment lancé dans l'apprentissage du permis A2.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-lg hover:shadow-blue-600/30 hover:scale-105 transition-transform duration-300 text-center">
+                <i class="fas fa-lock text-blue-600 text-5xl mb-4"></i>
+                <h3 class="text-xl font-semibold text-blue-600 mb-2">Cybersécurité</h3>
+                <p>Exploration de la cybersécurité à travers l'OSINT, la stéganographie et l'analyse de vulnérabilités.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-lg hover:shadow-blue-600/30 hover:scale-105 transition-transform duration-300 text-center">
+                <i class="fas fa-gamepad text-blue-600 text-5xl mb-4"></i>
+                <h3 class="text-xl font-semibold text-blue-600 mb-2">Jeux Vidéo</h3>
+                <p>Amateur de jeux vidéo depuis mon enfance, je m'intéresse aux aspects techniques et créatifs.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-lg hover:shadow-blue-600/30 hover:scale-105 transition-transform duration-300 text-center">
+                <i class="fas fa-guitar text-blue-600 text-5xl mb-4"></i>
+                <h3 class="text-xl font-semibold text-blue-600 mb-2">Musique</h3>
+                <p>La musique occupe une place importante dans ma vie. J'apprends la guitare et aime explorer divers styles musicaux.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-lg hover:shadow-blue-600/30 hover:scale-105 transition-transform duration-300 text-center">
+                <i class="fas fa-book text-blue-600 text-5xl mb-4"></i>
+                <h3 class="text-xl font-semibold text-blue-600 mb-2">Lecture</h3>
+                <p>Passionné par la lecture, j'aime plonger dans des livres de science-fiction et policiers.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-lg hover:shadow-blue-600/30 hover:scale-105 transition-transform duration-300 text-center">
+                <i class="fas fa-film text-blue-600 text-5xl mb-4"></i>
+                <h3 class="text-xl font-semibold text-blue-600 mb-2">Cinéma</h3>
+                <p>Le cinéma est une passion que j'entretiens en découvrant de nouveaux films et séries.</p>
+            </div>
+        </div>
+    </div>
+</section>         
+
+
+    <!-- Section Compétences -->
+    <section id="competences" class="py-20 bg-white">
+        <div class="container mx-auto px-32">
+            <h2 class="section-title text-3xl font-bold text-center mb-10">Mes Compétences</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <!-- Cybersécurité -->
+                <div class="bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-lg hover:shadow-blue-600/30 hover:scale-105 transition-transform duration-300 text-center">
+                    <i class="fas fa-lock text-blue-600 text-5xl mb-4"></i>
+                    <h3 class="text-xl font-semibold text-blue-600 mb-4 text-center ">Cybersécurité</h3>
+                    <ul class="space-y-2">
+                        <li><i class="fas fa-search text-blue-600 mr-2"></i>OSINT</li>
+                        <li><i class="fas fa-image text-blue-600 mr-2"></i>Stéganographie</li>
+                        <li><i class="fas fa-flask text-blue-600 mr-2"></i>Forensic</li>
+                        <li><i class="fas fa-bug text-blue-600 mr-2"></i>Analyse de vulnérabilités</li>
+                    </ul>
+                </div>
+                <!-- Développement -->
+                <div class="bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-lg hover:shadow-blue-600/30 hover:scale-105 transition-transform duration-300 text-center">
+                    <i class="fas fa-code text-blue-600 text-5xl mb-4"></i>
+                    <h3 class="text-xl font-semibold text-blue-600 mb-4 text-center">Développement</h3>
+                    <ul class="space-y-2">
+                        <li><i class="fab fa-html5 text-blue-600 mr-2"></i>Frontend</li>
+                        <li><i class="fab fa-js text-blue-600 mr-2"></i>JavaScript</li>
+                        <li><i class="fab fa-golang text-blue-600 mr-2"></i>Golang</li>
+                        <li><i class="fab fa-python text-blue-600 mr-2"></i>Python</li>
+                        <li><i class="fab fa-php text-blue-600 mr2"></i> Php</li>
+                    </ul>
+                </div>
+                <!-- Outils & Divers -->
+                <div class="bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-lg hover:shadow-blue-600/30 hover:scale-105 transition-transform duration-300 text-center">
+                    <i class="fas fa-cog text-blue-600 text-5xl mb-4"></i>
+                    <h3 class="text-xl font-semibold text-blue-600 mb-4 ">Outils & Divers</h3>
+                    <ul class="space-y-2">
+                        <li><i class="fab fa-docker text-blue-600 mr-2"></i>Docker</li>
+                        <li><i class="fab fa-git-alt text-blue-600 mr-2"></i>Git</li>
+                        <li><i class="fab fa-linux text-blue-600 mr-2"></i>Linux (Ubuntu, Kali)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        
+<!-- Section Projets -->
+    <section id="projects" class="py-20 bg-gray-100 ">
+        <div class="container mx-auto  ">
+            <h2 class="section-title text-3xl font-bold text-center mb-10">Mes projets</h2>
+            <div class="flex justify-evenly ">
+                <div class="bg-white rounded-lg shadow hover:shadow-lg hover:shadow-blue-600/30 hover:scale-105 overflow-hidden transition-transform justify-center ">
+                    <a href="https://github.com/Dorianlmt/Quiz.go" target="_blank">
+                        <img src="images/projet1.jpg" alt="Quiz de Pâques" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold text-blue-500 mb-2">Quiz de Pâques - 2023</h3>
+                            <p>Un quiz réalisé en Golang sur le thème de Pâques.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="bg-white rounded-lg shadow hover:shadow-lg hover:shadow-blue-600/30 hover:scale-105 transition-transform overflow-hidden ">
+                    <a href="./transmusicales.php" target="_blank">
+                        <img src="images/trans.jpg" alt="Challenge 48H" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold text-blue-500 mb-2">Challenge 48H - 2023</h3>
+                            <p>Un projet scolaire réalisé avec les Transmusicales.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Section Contact -->
+    <section id="contact" class="py-20 bg-gray-100">
+        <div class="container mx-auto ">
+            <h2 class="section-title text-3xl font-bold text-center mb-10">Contactez-moi</h2>
+            <form action="submit_form.php" method="post" class="max-w-lg mx-auto bg-gray-200 p-6 rounded-lg shadow-lg shadow-s shadow-blue-600/30">
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700 font-semibold mb-2">Email :</label>
+                    <input type="email" id="email" name="email" class="w-full p-3 border rounded-lg active:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 border-blue-600" placeholder="Votre email" required>
+                </div>
+                <div class="mb-4">
+                    <label for="subject" class="block text-gray-700 font-semibold mb-2">Sujet :</label>
+                    <input type="text" id="subject" name="subject" class="w-full p-3 border rounded-lg active:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 border-blue-600" placeholder="Sujet" required>
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-gray-700 font-semibold mb-2">Message :</label>
+                    <textarea id="message" name="message" rows="5" class="w-full p-3 border rounded-lg active:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 border-blue-600" placeholder="Votre message" required></textarea>
+                </div>
+                <button type="submit" class="w-full bg-blue-500 text-white py-3 rounded-lg hover:bg-blue-700">Envoyer</button>
+            </form>
+        </div>
+    </section>
+    
+    
+</body>
+
+<div class="flex justify-center space-x-6 mt-4">
+    <a href="mailto:lmt.dorian.pro@gmail.com" class="hover:text-blue-600 ">
+        <i class="fas fa-envelope fa-2xl size-9"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/dorian-lbls/" target="_blank" class="hover:text-blue-600">
+        <i class="fab fa-linkedin fa-2xl"></i>
+    </a>
+    <a href="https://github.com/Dorianlmt" target="_blank" class="hover:text-blue-600">
+        <i class="fab fa-github fa-2xl"></i>
+    </a>
+</div>
+</div>
+<footer class="bg-gray-900 text-white py-6">
+    <div class="container mx-auto text-center">
+        <p>&copy; 2024 Dorian LE BLEIS--MICHAUD-THOMIN - Tous droits reservés.</p>
+    </div>
+</footer>
+
+</html>
