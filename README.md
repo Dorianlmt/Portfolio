@@ -25,3 +25,6 @@ Ce projet est un **portfolio personnel** réalisé dans le cadre de mes études 
 Pour accéder au portfolio vous pouvez soit clone le repo et y accéder en local via xampp
 Vous pouvez sinon y accéder à l'adresse suivante : 
 https://doricard.com/
+
+## Wireframe 
+![portfolio wireframe](https://github.com/user-attachments/assets/7b18d78f-161a-4b99-867a-413021b12448)
